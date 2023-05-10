@@ -5,6 +5,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Weather from './weather';
+import Fx from './fx';
 function App() {
   return (
     <Router>
@@ -12,7 +13,7 @@ function App() {
    
       <Routes>
         <Route path="/" element={<Weather />} />
-        
+        <Route path="fx" element={<Fx/>} />
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
 

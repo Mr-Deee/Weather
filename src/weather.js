@@ -1,5 +1,6 @@
 import React from "react"
-
+import  './index.css'
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const api = {
@@ -7,6 +8,12 @@ const api = {
     base: "https://api.openweathermap.org/data/2.5/",
   };
 function Weather(){
+  const navigate = useNavigate();
+  const FxPage = () => {
+    navigate("/Fx")
+}
+
+
 
     const [search, setSearch] = useState("");
     const [weather, setWeather] = useState({});
@@ -25,7 +32,7 @@ function Weather(){
         
           <header className="App-header">
             {/* HEADER  */}
-            <h1>Weather App</h1>
+            <h1>Weather</h1>
     
             {/* Search Box - Input + Button  */}
             <div>
@@ -53,6 +60,12 @@ function Weather(){
             ) : (
               ""
             )}
+            <button className="fxbtn" onClick={FxPage}><p>FX</p>
+</button>
+
+
+
+
           </header>
 
       );

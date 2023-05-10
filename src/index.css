@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.fxbtn{
+  margin-top: 30px;
+  width: 300px;
+  background-color: black;
+  border-radius: 20px;
+  border-color: black;
+  box-shadow: 1px 2px 9px #5f5b5c76;
+  color: aqua;
+}
