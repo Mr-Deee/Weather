@@ -1,13 +1,14 @@
 .app {
     padding: 12px;
-    background-color: #282c34;
+    background-color: #000000;
     color: #fafafa;
     min-height: 100vh;
   }
   .card {
-    border: 1px solid #3f3f3f;
+    border: 1px solid #ec3535;
     padding: 12px;
-    margin-top: 12px;
+    border-radius: 32px;
+    margin-top: 42px;
   }
   .input {
     width: 100%;
