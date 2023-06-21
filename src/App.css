@@ -9,6 +9,8 @@
 
 .home,
 .about,
+
+
 .contact {
   display: flex;
   height: 90vh;
@@ -33,6 +35,7 @@
 }
 
 @media screen and (max-width: 960px) {
+  .Welcome,
   .home,
   .about,
   .contact {
@@ -43,4 +46,15 @@
     margin-left: 1rem;
     font-size: 80px;
   }
+}
+/* Footer CSS */
+.footer__container {
+  background-color: #faf5f5;
+  padding: 5rem 0;
+  text-align: center;
+  
+}
+
+.website__rights {
+  color: #000;
 }
