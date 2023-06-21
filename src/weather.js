@@ -2,6 +2,8 @@ import React from "react"
 import  './index.css'
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Navbar from "./components/navbar";
+
 
 const api = {
     key: "ea2750f438aa72263c93000a77f10c8e",
@@ -29,8 +31,13 @@ function Weather(){
         });
     };
     return (
-        
-          <header className="App-header">
+     
+      
+  
+    
+          <div className="App-header">
+
+        <Navbar/>
             {/* HEADER  */}
             <h1>Weather</h1>
     
@@ -66,7 +73,8 @@ function Weather(){
 
 
 
-          </header>
+          </div>
+
 
       );
 
