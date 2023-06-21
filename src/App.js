@@ -8,6 +8,7 @@ import Weather from './weather';
 import Navbar from "./components/navbar";
 import Fx from './fx';
 import Home from './pages/home';
+import Footer from './components/footer';
 function App() {
   return (
 
@@ -21,8 +22,8 @@ function App() {
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
 
-
-  
+<Footer/>
+     
     </Router>
  
   );

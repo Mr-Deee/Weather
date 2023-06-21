@@ -19,7 +19,7 @@ function Navbar() {
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               {/* <GiRocketThruster className="navbar-icon" /> */}
-              Skye
+              Dash
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -36,16 +36,21 @@ function Navbar() {
                   Home
                 </NavLink>
               </li>
+
+
               <li className="nav-item">
                 <NavLink
-                  to="/about"
+                  to="/fx"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  About
+                  Forex
                 </NavLink>
+              </li>
+              <li className="nav-item">
+              
               </li>
               <li className="nav-item">
                 <NavLink

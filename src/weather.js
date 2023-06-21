@@ -37,7 +37,7 @@ function Weather(){
     
           <div className="App-header">
 
-        <Navbar/>
+     
             {/* HEADER  */}
             <h1>Weather</h1>
     
@@ -67,9 +67,6 @@ function Weather(){
             ) : (
               ""
             )}
-            <button className="fxbtn" onClick={FxPage}><p>FX</p>
-</button>
-
 
 
 
