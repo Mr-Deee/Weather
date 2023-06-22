@@ -1,0 +1,136 @@
+.App-header {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: #0d9de3;
+  color: #fff;
+}
+.searchbtn {
+  margin-top: 20px;
+  width: 250px;
+  height: 40px;
+}
+.searchbox {
+  margin-top: 20px;
+  text-align: center;
+
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+}
+.pagetitle {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.weathername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+}
+.card {
+  height: 600px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000016;
+  border-radius: 50px;
+}
+
+.card__cover {
+  height: 8rem;
+  width: 100%;
+}
+
+.card__content {
+  /* Take available height */
+  flex: 1;
+}
+
+.scrollable-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media screen and (max-width: 960px) {
+  .weathername {
+    font-size: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+  }
+  .pagetitle {
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    height: 500px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000016;
+    border-radius: 50px;
+  }
+
+  .searchbtn {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 110px;
+    height: 40px;
+  }
+  .searchbox {
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-icon {
+    margin-left: 1rem;
+    font-size: 80px;
+  }
+
+  .text-highlight {
+    color: #0071f3;
+    font-size: 2.5rem;
+  }
+  .texthi {
+    font-size: 2.5rem;
+  }
+
+  .image-container {
+    width: 200px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 12px; /* Enable scrolling when the image overflows the container */
+  }
+
+  .scrollable-image {
+    display: block;
+    max-width: 100%;
+    max-height: 300%;
+  }
+}
