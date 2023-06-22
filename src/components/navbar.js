@@ -49,9 +49,7 @@ function Navbar() {
                   Forex
                 </NavLink>
               </li>
-              <li className="nav-item">
-              
-              </li>
+             
               <li className="nav-item">
                 <NavLink
                   to="/Weather"

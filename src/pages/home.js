@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
+import image1 from '../assets/Capture.PNG'
 import './home.css'
 function Home() {
   return (
@@ -10,11 +12,11 @@ function Home() {
     <div className="Welcome">
     <div >
     <h1 className="texthi">Hi there,<span class="text-highlight">Welcome</span></h1>
-                <p>Dash, home for all your checkins</p>
+                <p>Dash, something something</p>
 
-                <div className="image-container">
-      <img src="path/to/your/image.jpg" alt="Scrollable Image" className="scrollable-image" />
-    </div>
+                {/* <div className="image-container">
+      <img src={image1 }alt="Scrollable Image" className="scrollable-image" />
+    </div> */}
                 
   </div>
 

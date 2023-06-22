@@ -22,9 +22,12 @@
     padding-top: 4rem;
 }
 .image-container {
-    width: 300px; /* Set the desired width */
+    width: 200px; /* Set the desired width */
     height: 200px; /* Set the desired height */
-    overflow: auto; /* Enable scrolling when the image overflows the container */
+    overflow: auto; 
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;/* Enable scrolling when the image overflows the container */
   }
   
   .scrollable-image {
@@ -61,5 +64,21 @@
 
 
 }
+
+.image-container {
+  width: 200px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  overflow: auto; 
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 12px;/* Enable scrolling when the image overflows the container */
+}
+
+.scrollable-image {
+  display: block;
+  max-width: 100%;
+  max-height: 300%;
+}
+
 
   }

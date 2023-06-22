@@ -1,8 +1,9 @@
 import React from "react"
-import  './index.css'
+import  '../index.css'
+import '../pages/weather.css'
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Navbar from "./components/navbar";
+import Navbar from "../components/navbar";
 
 
 const api = {
@@ -37,39 +38,45 @@ function Weather(){
     
           <div className="App-header">
 
-     
-            {/* HEADER  */}
-            <h1>Weather</h1>
     
-            {/* Search Box - Input + Button  */}
-            <div>
+            <div class="card">
+            <div class="pagetitle">
+                        <h1>Weather</h1>   </div>
+            <div class="card__cover">
+            <div className="centered-container">
               <input
+              className="searchbox"
                 type="text"
                 placeholder="Enter city/town..."
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <button onClick={searchPressed}>Search</button>
+              <button onClick={searchPressed} className="searchbtn">Search</button></div>
             </div>
     
             {/* If weather is not undefined display results from API */}
             {typeof weather.main !== "undefined" ? (
-              <div>
+              <div class="card__content">
                 {/* Location  */}
+                <div className="weathername">
                 <p>{weather.name}</p>
-    
-                {/* Temperature Celsius  */}
-                <p>{weather.main.temp}°C</p>
-    
+               <p>{weather.main.temp}°C</p>
+                 
                 {/* Condition (Sunny ) */}
                 <p>{weather.weather[0].main}</p>
-                <p>({weather.weather[0].description})</p>
+              <p>({weather.weather[0].description})</p>
+    </div>
+                {/* Temperature Celsius  */}
+                
+                {/* Condition (Sunny ) */}
+               
+                {/* <p>({weather.weather[0].description})</p> */}
               </div>
             ) : (
               ""
             )}
 
 
-
+</div>
           </div>
 
 

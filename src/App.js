@@ -4,7 +4,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Weather from './weather';
+import Weather from './pages/weather';
 import Navbar from "./components/navbar";
 import Fx from './fx';
 import Home from './pages/home';
